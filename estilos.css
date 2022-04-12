@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Index*/
+/*Desktop*/
+@media (min-width: 1024px){
+    .imgLogo{
+        height: 140px;
+        width:  140px;
+    }
+    #grid-area-index{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "carrusel carrusel"
+        "producto contenido"
+        "pie pie"
+        ;
+        grid-template-rows: 0.5fr 3fr 2fr 0.5fr;
+        grid-template-columns: 50% 50%;
+    }
+    .cabeza{
+        grid-area: cabeza;
+        background-color: rgba(12, 12, 12);
+    }
+    .carrusel{
+        grid-area: carrusel;
+    }
+    .productoUno{
+        grid-area: producto;
+        height: 70vh;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+    }
+    .productoUno img{
+        height: 40vh;
+        width: 40vh;
+    }
+    .productoDos{
+        grid-area: contenido;
+        height: 70vh;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 15px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+    }
+    .productoDos img{
+        height: 40vh;
+        width: 40vh;
+    }
+    .pie{
+        background: linear-gradient(to bottom, rgba(235, 235, 235, 0.5), rgb(128, 128, 128));
+        grid-area: pie;
+    } 
+    .navegador{
+        display: flex;
+        flex-direction: row;
+    }
+    .navFooter{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .botonesNav{
+        text-decoration: none;
+        padding: 60px;
+        color: white;
+    }
+    .listaNav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .listaPie{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .listaNav li{
+        margin-top: 60px;
+    }
+    .listaPie{
+        margin-top: 60px;
+    }
+    .imgIcono{
+        height: 25px;
+        width: 25px;
+        margin: 5px;
+    }
+    .cajaIconos{
+        height: 30px;
+        width: 20%;
+        margin-top: 100px;
+        margin-left: 10%;
+    }
+    .botonesPie{
+        text-decoration: none;
+        padding: 30px;
+        margin-left: 18vh;
+    }
+    .textFooter{
+        text-align: center;
+    }   
+}
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 1023px){
+    .imgLogo{   
+    height: 140px;
+    width:  140px;
+    }
+    #grid-area-index{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "carrusel"
+        "producto"
+        "contenido"
+        "pie"
+        ;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-columns: 100%;
+    }
+    .cabeza{
+        grid-area: cabeza;
+        background-color: rgba(12, 12, 12);
+    }
+    .carrusel{
+        grid-area: carrusel;
+    }
+    .productoUno{
+        grid-area: producto;
+        height: 70vh;
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 15px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+    }
+    .productoUno img{
+        height: 35vh;
+        width: 40vh;
+    }
+    .productoDos{
+        grid-area: contenido;
+        height: 70vh;
+        width: 70%;
+        margin-left: 15%;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+    }
+    .productoDos img{
+        height: 35vh;
+        width: 40vh;
+    }
+    .pie{
+        background: linear-gradient(to bottom, rgba(235, 235, 235, 0.5), rgb(128, 128, 128));
+        grid-area: pie;
+    } 
+    .navegador{
+        display: flex;
+        flex-direction: row;
+    }
+    .botonesNav{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+    }
+    .listaNav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .listaNav li{
+        margin-top: 60px;
+    }
+    .listaPie li{
+        list-style: none;   
+    }
+    .imgIcono{
+       display: none;
+    }
+    .listaPie{
+        display: flex;
+        flex-direction: column;
+    }
+    .navFooter{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .botonesPie{
+        text-decoration: none;
+    }
+    .textFooter{
+        text-align: center;
+    }   
+}
+/*Smartphone*/
+@media (max-width: 479px){
+    .imgLogo{   
+        height: 140px;
+        width:  140px;
+        }
+        #grid-area-index{
+            display: grid;
+            grid-template-areas: 
+            "cabeza"
+            "carrusel"
+            "producto"
+            "contenido"
+            "pie"
+            ;
+            grid-template-rows: 0.5fr 1fr 1.5fr 1.5fr 0.5fr;
+            grid-template-columns: 100%;
+        }
+        .cabeza{
+            grid-area: cabeza;
+            background-color: rgba(12, 12, 12);
+        }
+        .navegador{
+            display: flex;
+            flex-direction: row;
+        }
+        .carrusel{
+            grid-area: carrusel;
+        }
+        .productoUno{
+            grid-area: producto;
+            height: 70vh;
+            width: 70%;
+            margin-left: 10%;
+            margin-bottom: 15px;
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .productoUno img{
+            height: 35vh;
+            width: 35vh;
+        }
+        .productoDos{
+            grid-area: contenido;
+            height: 70vh;
+            width: 70%;
+            margin-left: 10%;
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .productoDos img{
+            height: 35vh;
+            width: 35vh;
+        }
+        .pie{
+            background: linear-gradient(to bottom, rgba(235, 235, 235, 0.5), rgb(128, 128, 128));
+            grid-area: pie;
+        } 
+       
+        .botonesNav{
+            text-decoration: none;
+            background-color: #006EBD;
+            color: white;
+        }
+        .listaNav{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            width: 90%;
+            margin-top: 5px;
+        }
+        .listaNav li{
+            width: 90%;
+            background-color: #006EBD;
+            padding: 2px;
+            margin: 2px;
+            border-radius: 5%;
+        }
+        .listaPie li{
+            list-style: none; 
+        }
+        .imgIcono{
+           display: none;
+        }
+        .listaPie{
+            display: flex;
+            flex-direction: column;
+        }
+        .navFooter{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .botonesPie{
+            text-decoration: none;
+        }
+        .textFooter{
+            text-align: center;
+        }   
+    
+}
+/*Productos*/
+/*Desktop*/
+@media (min-width: 1024px){
+    #grid-area-productos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "aside productos"
+        "pie pie"
+        ;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-columns: 20% 80%;
+    }
+    .productos{
+        grid-area: productos;
+        background-color: white;
+    }
+    .contenedorAside{
+        grid-area: aside;
+    }
+    .card-img-top{
+        height: 40vh;
+        width: 5vh;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 1023px){
+    #grid-area-productos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "aside productos"
+        "pie pie"
+        ;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-columns: 20% 80%;
+    }
+    .productos{
+        grid-area: productos;
+        background-color: white;
+        margin: 5px;
+    }
+    .contenedorAside{
+        grid-area: aside;
+    }
+    .card-img-top{
+        height: 40vh;
+        width: 5vh;
+    }
+}
+/*Contacto*/
+#grid-area-contacto{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "formulario"
+    "pie"
+    ;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 100%;
+}
+.formulario{
+    grid-area: formulario;
+    background-color: #2F75E6;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 3%;
+  }
+  .formulario form{
+    text-align: center;
+  }
+  .formulario h2{
+    padding: 20px;
+    font-size: 40px; 
+    text-decoration: underline; 
+    text-align: center;
+  }
+  .textForm{
+    font-size: small;
+  }
+  .botonForm{
+    padding: 8px;
+  }
+  .botonForm:hover{
+    background-color: rgba(32, 32, 209, 0.815);
+    color: white;
+  }
+/*Ubicacion*/
+#grid-area-ubicacion{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "ubicacion"
+    "pie"
+    ;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 100%;
+}
+.ubicacion{
+    grid-area: ubicacion;
+    background-color: #2F75E6;
+    height: 100vh;
+    width: 80vw;
+    margin: 40px;
+    margin-left: 10%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 3%;
+  }
+  .textUbicacion{
+    padding: 5px;
+  }
+  /*Nosotros*/
+  .grid-area-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "menu menu"
+    "imagenNosotros seccionNosotros"
+    "pie pie";
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .imagenNosotros{
+    grid-area: imagenNosotros;
+    width: 80%;
+    height: 400px;
+    padding: 20px;
+    margin-left: 30px;
+  }
+  .seccionNosotros{
+    grid-area: seccionNosotros;
+    height: 360px;
+    width: 80%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #2F75E6;
+    color: white;
+    border-radius: 3%;
+  }
+  .seccionNosotros p{
+    padding-top: 30px;
+  }
