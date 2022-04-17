@@ -370,7 +370,7 @@
 }
 .formulario{
     grid-area: formulario;
-    background-color: #2F75E6;
+    background-image: radial-gradient( #b9b9b944 30%, white 75%);
     margin: 50px;
     padding: 30px;
     border-radius: 3%;
@@ -379,20 +379,12 @@
     text-align: center;
   }
   .formulario h2{
-    padding: 20px;
-    font-size: 40px; 
-    text-decoration: underline; 
+    padding: 5px;
+    font-size: 40px;  
     text-align: center;
   }
   .textForm{
     font-size: small;
-  }
-  .botonForm{
-    padding: 8px;
-  }
-  .botonForm:hover{
-    background-color: rgba(32, 32, 209, 0.815);
-    color: white;
   }
 /*Ubicacion*/
 #grid-area-ubicacion{
@@ -407,7 +399,7 @@
 }
 .ubicacion{
     grid-area: ubicacion;
-    background-color: #2F75E6;
+    background-image: radial-gradient( #b9b9b944 50%, white 70%);
     height: 100vh;
     width: 80vw;
     margin: 40px;
@@ -419,11 +411,14 @@
   .textUbicacion{
     padding: 5px;
   }
+  .mapa{
+      width: 80%;
+  }
   /*Nosotros*/
-  .grid-area-nosotros{
+  #grid-area-nosotros{
     display: grid;
     grid-template-areas: 
-    "menu menu"
+    "cabeza cabeza"
     "imagenNosotros seccionNosotros"
     "pie pie";
     grid-template-rows: 1fr 3fr 1fr;
@@ -437,17 +432,32 @@
     height: 400px;
     padding: 20px;
     margin-left: 30px;
-  }
+  } 
   .seccionNosotros{
     grid-area: seccionNosotros;
     height: 360px;
-    width: 80%;
-    margin: 20px;
+    width: 70%;
+    margin: 10px;
     padding: 30px;
-    background-color: #2F75E6;
-    color: white;
+    background-image: radial-gradient( #b9b9b95e 30%, white 70%);
     border-radius: 3%;
   }
   .seccionNosotros p{
     padding-top: 30px;
+  }
+@media (max-width: 900px){
+    #grid-area-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "seccionNosotros"
+        "pie";
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+      }
+      .imagenNosotros{
+      display: none;
+      }
   }
