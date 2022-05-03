@@ -1,0 +1,61 @@
+/*Desktop*/
+@import "header-footer";
+@media (min-width: 1024px){
+        #grid-area-productos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "aside productos"
+        "pie pie"
+        ;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-columns: 20% 80%;
+        .contenedorAside{
+                grid-area: aside;
+        }
+        .productos{
+                grid-area: productos;
+                background-color: white;          
+                .card-img-top{
+                 @include tamanio (40vh, 40vh);
+                }
+            }
+            .tituloProductos{
+                text-align: center;
+                margin: 10px;
+            }
+            .card{
+                margin: 20px; 
+            }                          
+        }
+}
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 1023px){
+        #grid-area-productos{
+            display: grid;
+            grid-template-areas: 
+            "cabeza cabeza"
+            "aside productos"
+            "pie pie"
+            ;
+            grid-template-rows: 1fr 6fr 1fr;
+            grid-template-columns: 20% 80%;
+            .contenedorAside{
+                grid-area: aside;
+            }
+            .productos{
+                grid-area: productos;
+                background-color: white;
+                .card-img-top{
+                @include tamanio (30vh, 20vh);
+                }
+            }
+            .tituloProductos{
+                text-align: center;
+                margin: 10px;
+            }
+            .card{
+                margin: 3%; 
+            } 
+        }
+}

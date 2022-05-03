@@ -1,0 +1,124 @@
+@media (min-width: 1024px)
+{#grid-area-index{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "carrusel carrusel"
+    "producto contenido"
+    "pie pie"
+    ;
+    grid-template-rows: 0.5fr 3fr 2fr 0.5fr;
+    grid-template-columns: 50% 50%;
+        .carrusel{
+        grid-area: carrusel;
+        }
+        .productoUno{
+        grid-area: producto;
+        @include tamanio (70vh, 70%);
+        margin-left: 15%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+        img{
+            @include tamanio (40vh, 40vh);
+         }
+        }
+        .productoDos{
+        grid-area: contenido;
+        @include tamanio (70vh, 70%);
+        margin-left: 15%;
+        margin-top: 15px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+            img{
+                @include tamanio(40vh, 40vh);
+            }
+        }
+    }
+}
+// Vista Tablet
+@media (min-width: 480px) and (max-width: 1023px){
+    #grid-area-index{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "carrusel"
+        "producto"
+        "contenido"
+        "pie"
+        ;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-columns: 100%;
+            .carrusel{
+            grid-area: carrusel;
+            }
+            .productoUno{
+            grid-area: producto;
+            @include tamanio (70vh, 70%);
+            margin-left: 15%;
+            margin-bottom: 15px;
+            background-color: white;
+            padding: 40px;
+            text-align: center;
+                img{
+                    @include tamanio(35vh, 40vh);
+                }
+            }
+            .productoDos{
+            grid-area: contenido;
+            @include tamanio (70vh, 70%);
+            margin-left: 15%;
+            background-color: white;
+            padding: 40px;
+            text-align: center;
+                img{
+                    @include tamanio (35vh, 40vh);
+                }
+            }
+    }
+}
+// Vista Smartphone
+@media (max-width: 479px){
+    #grid-area-index{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "carrusel"
+        "producto"
+        "contenido"
+        "pie"
+        ;
+        grid-template-rows: 0.5fr 1fr 1.5fr 1.5fr 0.5fr;
+        grid-template-columns: 100%;
+        .carrusel{
+        grid-area: carrusel;
+        }
+        .productoUno{
+        grid-area: producto;
+        @include tamanio (70vh, 70%);
+        margin-left: 15%;
+        margin-bottom: 15px;
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+            img{
+                @include tamanio (25vh, 20vh);
+            }
+        }
+        .productoDos{
+        grid-area: contenido;
+        @include tamanio (70vh, 70%);
+        margin-left: 15%;
+        margin-bottom: 15px;
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+            img{
+                @include tamanio (25vh, 20vh);
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+// Desktop
+@media (min-width: 1024px){
+.cabeza{
+    grid-area: cabeza;
+    background-color: $negro;
+    .navegador{
+    display: flex;
+    flex-direction: row;
+        .imgLogo{
+            @include tamanio (140px, 140px);
+        }
+        .listaNav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+            li{
+            margin-top: 60px;
+            .botonesNav{
+                text-decoration: none;
+                padding: 60px;
+                color: white;
+                }
+            }
+        }
+        .cajaIconos{
+        @include tamanio (30px, 20%);
+        margin-top: 100px;
+        margin-left: 10%;
+            .imgIcono{
+            margin: 5px;
+            }
+        }
+    }
+}
+}
+// Tablet
+@media (min-width: 480px) and (max-width: 1023px){   
+.cabeza{
+    grid-area: cabeza;
+    background-color: $negro;
+    .navegador{
+    display: flex;
+    flex-direction: row;
+        .imgLogo{
+            @include tamanio (140px, 140px);
+        }
+        .listaNav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+            li{
+            margin-top: 60px;
+            .botonesNav{
+                text-decoration: none;
+                padding: 30px;
+                color: white;
+                }
+            }
+        }
+        .cajaIconos{
+            display: none;
+            .imgIcono{
+            display: none;
+            }
+        }
+    }
+}
+}
+// Smartphone
+@media (max-width: 480px){
+    .cabeza{
+        grid-area: cabeza;
+        background-color: $negro;
+            .navegador{
+            display: flex;
+            flex-direction: row;
+                .imgLogo{
+                    @include tamanio (140px, 140px);
+                }
+                .listaNav{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                width: 90%;
+                margin-top: 5px;
+                    .botonesNav{
+                    color: white;
+                    text-decoration: none;
+                    }
+                    li{
+                    width: 90%;
+                    background-color: $color-principal;
+                    padding: 2px;
+                    margin: 2px;
+                    border-radius: 5px;
+                    }
+                }
+                .cajaIconos{
+                display: none;
+                    .imgIcono{
+                    display: none;
+                    }
+                }  
+            }
+        }
+}
+// Footer   
+// Desktop
+@media (min-width: 1024px){
+.pie{
+    background: linear-gradient(to bottom, $color-gradiente-tres, $color-gradiente-dos);
+    grid-area: pie;
+        .listaPie{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 60px;
+            .botonesPie{
+            text-decoration: none;
+            padding: 30px;
+            margin-left: 18vh;
+            }
+        }
+        .textFooter{
+        text-align: center;
+        }  
+    }
+} 
+// Tablet
+@media (min-width: 480px) and (max-width: 1023px){ 
+.pie{
+    background: linear-gradient(to bottom, $color-gradiente-tres, $color-gradiente-dos);
+    grid-area: pie;
+        .listaPie{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 60px;
+            li{
+                padding: 20px;
+            }
+            .botonesPie{
+            text-decoration: none;
+            padding: 10%;
+            margin-left: 4.5vh;
+            }
+        }
+        .textFooter{
+        text-align: center;
+        }  
+    } 
+}
+// Smartphone
+@media (max-width: 480px){ 
+    .pie{
+        background: linear-gradient(to bottom, $color-gradiente-tres, $color-gradiente-dos);
+        grid-area: pie;
+            .listaPie{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-top: 5px;
+                li{
+                    padding: 5px;
+                }
+                .botonesPie{
+                text-decoration: none;;
+                }
+            }
+            .textFooter{
+            text-align: center;
+            }  
+        } 
+    }

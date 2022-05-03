@@ -1,0 +1,46 @@
+#grid-area-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "imagenNosotros seccionNosotros"
+    "pie pie";
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    .imagenNosotros{
+        grid-area: imagenNosotros;
+        @include tamanio(400px, 80%);
+        padding: 20px;
+        margin-left: 30px;
+    } 
+    .seccionNosotros{
+        grid-area: seccionNosotros;
+        height: 360px;
+        width: 70%;
+        @include tamanio(360px, 70%);
+        margin: 10px;
+        padding: 30px;
+        background-image: radial-gradient( #b9b9b95e 30%, white 70%);
+        border-radius: 3%;
+        p{
+            padding-top: 30px;
+        }
+    }
+  }
+@media (max-width: 950px){
+    #grid-area-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "seccionNosotros"
+        "pie";
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        .imagenNosotros{
+            display: none;
+            }
+    }
+}
