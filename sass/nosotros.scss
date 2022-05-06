@@ -33,14 +33,18 @@
         display: grid;
         grid-template-areas: 
         "cabeza"
+        "imagenNosotros"
         "seccionNosotros"
         "pie";
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
         grid-column-gap: 20px;
         .imagenNosotros{
-            display: none;
-            }
+            grid-area: imagenNosotros;
+            @include tamanio(300px, 80%);
+            padding: 10px;
+            margin-left: 20px;
     }
+}
 }

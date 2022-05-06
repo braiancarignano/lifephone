@@ -4,7 +4,7 @@ Agregue Seo al proyecto:
 - Agregue un h1 a todos los html.
 Agregue Sass:
 - Agregue Sass a todas las secciones con @import.
-- Implemente variables y @extend.
+- Implemente variables y @mixins.
 - Utilice el anidamiento.
 Mejore los iconos de header.
 Mejore el responsive del footer.
