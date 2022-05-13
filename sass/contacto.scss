@@ -26,6 +26,8 @@
         margin: 3px;
     }
 }
-.textForm{
-    font-size: small;
+@media (min-width: 1024px){
+  .cajaForm{
+    width: 25%;
   }
+}

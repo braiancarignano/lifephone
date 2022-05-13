@@ -1,4 +1,4 @@
-/*Desktop*/
+// Desktop
 @import "header-footer";
 @media (min-width: 1024px){
         #grid-area-productos{
@@ -15,7 +15,7 @@
         }
         .productos{
                 grid-area: productos;
-                background-color: white;          
+                background-color: $blanco;          
                 .card-img-top{
                  @include tamanio (40vh, 40vh);
                 }
@@ -29,7 +29,7 @@
             }                          
         }
 }
-/*Tablet*/
+// Tablet
 @media (min-width: 480px) and (max-width: 1023px){
         #grid-area-productos{
             display: grid;
@@ -45,7 +45,7 @@
             }
             .productos{
                 grid-area: productos;
-                background-color: white;
+                background-color: $blanco;
                 .card-img-top{
                 @include tamanio (30vh, 20vh);
                 }

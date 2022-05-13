@@ -18,7 +18,7 @@
             .botonesNav{
                 text-decoration: none;
                 padding: 60px;
-                color: white;
+                color: $blanco;
                 }
             }
         }
@@ -53,7 +53,7 @@
             .botonesNav{
                 text-decoration: none;
                 padding: 30px;
-                color: white;
+                color: $blanco;
                 }
             }
         }
@@ -84,7 +84,7 @@
                 width: 90%;
                 margin-top: 5px;
                     .botonesNav{
-                    color: white;
+                    color: $blanco;
                     text-decoration: none;
                     }
                     li{
@@ -108,7 +108,7 @@
 // Desktop
 @media (min-width: 1024px){
 .pie{
-    background: linear-gradient(to bottom, $color-gradiente-tres, $color-gradiente-dos);
+    background: linear-gradient(to bottom, $blanco, $color-gradiente-dos);
     grid-area: pie;
         .listaPie{
         display: flex;
@@ -129,7 +129,7 @@
 // Tablet
 @media (min-width: 480px) and (max-width: 1023px){ 
 .pie{
-    background: linear-gradient(to bottom, $color-gradiente-tres, $color-gradiente-dos);
+    background: linear-gradient(to bottom, $blanco, $color-gradiente-dos);
     grid-area: pie;
         .listaPie{
         display: flex;
@@ -153,7 +153,7 @@
 // Smartphone
 @media (max-width: 480px){ 
     .pie{
-        background: linear-gradient(to bottom, $color-gradiente-tres, $color-gradiente-dos);
+        background: linear-gradient(to bottom, $blanco, $color-gradiente-dos);
         grid-area: pie;
             .listaPie{
             display: flex;

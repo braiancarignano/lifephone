@@ -9,7 +9,7 @@
     grid-template-columns: 100%;
     .ubicacion{
         grid-area: ubicacion;
-        background-image: radial-gradient( #b9b9b944 50%, white 70%);
+        background-image: radial-gradient( $color-gris-oscuro 50%, $blanco 70%);
         @include tamanio(100vh, 80vw);
         margin: 40px;
         margin-left: 10%;

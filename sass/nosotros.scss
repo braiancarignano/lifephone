@@ -21,7 +21,7 @@
         @include tamanio(360px, 70%);
         margin: 10px;
         padding: 30px;
-        background-image: radial-gradient( #b9b9b95e 30%, white 70%);
+        background-image: radial-gradient( $color-gris-oscuro 30%, $blanco 70%);
         border-radius: 3%;
         p{
             padding-top: 30px;

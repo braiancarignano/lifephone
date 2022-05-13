@@ -22,7 +22,7 @@
   .cabeza .navegador .listaNav li .botonesNav {
     text-decoration: none;
     padding: 60px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .cabeza .navegador .cajaIconos {
     height: 30px;
@@ -58,7 +58,7 @@
   .cabeza .navegador .listaNav li .botonesNav {
     text-decoration: none;
     padding: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .cabeza .navegador .cajaIconos {
     display: none;
@@ -88,7 +88,7 @@
     margin-top: 5px;
   }
   .cabeza .navegador .listaNav .botonesNav {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   .cabeza .navegador .listaNav li {
@@ -186,7 +186,7 @@
     margin-left: 15%;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 40px;
     text-align: center;
   }
@@ -200,7 +200,7 @@
     width: 70%;
     margin-left: 15%;
     margin-top: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 40px;
     text-align: center;
   }
@@ -225,7 +225,7 @@
     width: 70%;
     margin-left: 15%;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 40px;
     text-align: center;
   }
@@ -238,7 +238,7 @@
     height: 70vh;
     width: 70%;
     margin-left: 15%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 40px;
     text-align: center;
   }
@@ -263,7 +263,7 @@
     width: 70%;
     margin-left: 15%;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
   }
@@ -277,7 +277,7 @@
     width: 70%;
     margin-left: 15%;
     margin-bottom: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
   }
@@ -286,108 +286,6 @@
     width: 20vh;
   }
 }
-#grid-area-contacto {
-  display: grid;
-  grid-template-areas: "cabeza" "formulario" "pie";
-  grid-template-rows: 1fr 6fr 1fr;
-  grid-template-columns: 100%;
-}
-
-.formulario {
-  grid-area: formulario;
-  background-image: radial-gradient(rgba(185, 185, 185, 0.2666666667) 30%, white 75%);
-  margin: 50px;
-  padding: 30px;
-  border-radius: 3%;
-}
-.formulario form {
-  text-align: center;
-}
-.formulario h1 {
-  padding: 5px;
-  font-size: 40px;
-  text-align: center;
-}
-.formulario .botonForm {
-  margin: 3px;
-}
-
-.textForm {
-  font-size: small;
-}
-
-#grid-area-nosotros {
-  display: grid;
-  grid-template-areas: "cabeza cabeza" "imagenNosotros seccionNosotros" "pie pie";
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-}
-#grid-area-nosotros .imagenNosotros {
-  grid-area: imagenNosotros;
-  height: 400px;
-  width: 80%;
-  padding: 20px;
-  margin-left: 30px;
-}
-#grid-area-nosotros .seccionNosotros {
-  grid-area: seccionNosotros;
-  height: 360px;
-  width: 70%;
-  height: 360px;
-  width: 70%;
-  margin: 10px;
-  padding: 30px;
-  background-image: radial-gradient(rgba(185, 185, 185, 0.368627451) 30%, white 70%);
-  border-radius: 3%;
-}
-#grid-area-nosotros .seccionNosotros p {
-  padding-top: 30px;
-}
-
-@media (max-width: 950px) {
-  #grid-area-nosotros {
-    display: grid;
-    grid-template-areas: "cabeza" "imagenNosotros" "seccionNosotros" "pie";
-    grid-template-rows: 1fr 1fr 2fr 1fr;
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-  }
-  #grid-area-nosotros .imagenNosotros {
-    grid-area: imagenNosotros;
-    height: 300px;
-    width: 80%;
-    padding: 10px;
-    margin-left: 20px;
-  }
-}
-#grid-area-ubicacion {
-  display: grid;
-  grid-template-areas: "cabeza" "ubicacion" "pie";
-  grid-template-rows: 1fr 6fr 1fr;
-  grid-template-columns: 100%;
-}
-#grid-area-ubicacion .ubicacion {
-  grid-area: ubicacion;
-  background-image: radial-gradient(rgba(185, 185, 185, 0.2666666667) 50%, white 70%);
-  height: 100vh;
-  width: 80vw;
-  margin: 40px;
-  margin-left: 10%;
-  padding: 30px;
-  text-align: center;
-  border-radius: 3%;
-}
-#grid-area-ubicacion .ubicacion .textUbicacion {
-  padding: 5px;
-}
-#grid-area-ubicacion .ubicacion .mapa {
-  width: 80%;
-}
-
-/*Desktop*/
 @media (min-width: 1024px) {
   .cabeza {
     grid-area: cabeza;
@@ -412,7 +310,7 @@
   .cabeza .navegador .listaNav li .botonesNav {
     text-decoration: none;
     padding: 60px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .cabeza .navegador .cajaIconos {
     height: 30px;
@@ -448,7 +346,7 @@
   .cabeza .navegador .listaNav li .botonesNav {
     text-decoration: none;
     padding: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .cabeza .navegador .cajaIconos {
     display: none;
@@ -478,7 +376,7 @@
     margin-top: 5px;
   }
   .cabeza .navegador .listaNav .botonesNav {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   .cabeza .navegador .listaNav li {
@@ -571,7 +469,7 @@
   }
   #grid-area-productos .productos {
     grid-area: productos;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   #grid-area-productos .productos .card-img-top {
     height: 40vh;
@@ -585,7 +483,6 @@
     margin: 20px;
   }
 }
-/*Tablet*/
 @media (min-width: 480px) and (max-width: 1023px) {
   #grid-area-productos {
     display: grid;
@@ -598,7 +495,7 @@
   }
   #grid-area-productos .productos {
     grid-area: productos;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   #grid-area-productos .productos .card-img-top {
     height: 30vh;
@@ -610,6 +507,108 @@
   }
   #grid-area-productos .card {
     margin: 3%;
+  }
+}
+#grid-area-contacto {
+  display: grid;
+  grid-template-areas: "cabeza" "formulario" "pie";
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-columns: 100%;
+}
+
+.formulario {
+  grid-area: formulario;
+  background-image: radial-gradient(rgba(185, 185, 185, 0.2666666667) 30%, white 75%);
+  margin: 50px;
+  padding: 30px;
+  border-radius: 3%;
+}
+.formulario form {
+  text-align: center;
+}
+.formulario h1 {
+  padding: 5px;
+  font-size: 40px;
+  text-align: center;
+}
+.formulario .botonForm {
+  margin: 3px;
+}
+
+@media (min-width: 1024px) {
+  .cajaForm {
+    width: 25%;
+  }
+}
+#grid-area-ubicacion {
+  display: grid;
+  grid-template-areas: "cabeza" "ubicacion" "pie";
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-columns: 100%;
+}
+#grid-area-ubicacion .ubicacion {
+  grid-area: ubicacion;
+  background-image: radial-gradient(rgba(185, 185, 185, 0.2666666667) 50%, rgb(255, 255, 255) 70%);
+  height: 100vh;
+  width: 80vw;
+  margin: 40px;
+  margin-left: 10%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3%;
+}
+#grid-area-ubicacion .ubicacion .textUbicacion {
+  padding: 5px;
+}
+#grid-area-ubicacion .ubicacion .mapa {
+  width: 80%;
+}
+
+#grid-area-nosotros {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "imagenNosotros seccionNosotros" "pie pie";
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+#grid-area-nosotros .imagenNosotros {
+  grid-area: imagenNosotros;
+  height: 400px;
+  width: 80%;
+  padding: 20px;
+  margin-left: 30px;
+}
+#grid-area-nosotros .seccionNosotros {
+  grid-area: seccionNosotros;
+  height: 360px;
+  width: 70%;
+  height: 360px;
+  width: 70%;
+  margin: 10px;
+  padding: 30px;
+  background-image: radial-gradient(rgba(185, 185, 185, 0.2666666667) 30%, rgb(255, 255, 255) 70%);
+  border-radius: 3%;
+}
+#grid-area-nosotros .seccionNosotros p {
+  padding-top: 30px;
+}
+
+@media (max-width: 950px) {
+  #grid-area-nosotros {
+    display: grid;
+    grid-template-areas: "cabeza" "imagenNosotros" "seccionNosotros" "pie";
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  #grid-area-nosotros .imagenNosotros {
+    grid-area: imagenNosotros;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+    margin-left: 20px;
   }
 }
 

@@ -18,7 +18,7 @@
         margin-left: 15%;
         margin-top: 15px;
         margin-bottom: 15px;
-        background-color: white;
+        background-color: $blanco;
         padding: 40px;
         text-align: center;
         img{
@@ -30,7 +30,7 @@
         @include tamanio (70vh, 70%);
         margin-left: 15%;
         margin-top: 15px;
-        background-color: white;
+        background-color: $blanco;
         padding: 40px;
         text-align: center;
             img{
@@ -60,7 +60,7 @@
             @include tamanio (70vh, 70%);
             margin-left: 15%;
             margin-bottom: 15px;
-            background-color: white;
+            background-color: $blanco;
             padding: 40px;
             text-align: center;
                 img{
@@ -71,7 +71,7 @@
             grid-area: contenido;
             @include tamanio (70vh, 70%);
             margin-left: 15%;
-            background-color: white;
+            background-color: $blanco;
             padding: 40px;
             text-align: center;
                 img{
@@ -101,7 +101,7 @@
         @include tamanio (70vh, 70%);
         margin-left: 15%;
         margin-bottom: 15px;
-        background-color: white;
+        background-color: $blanco;
         padding: 10px;
         text-align: center;
             img{
@@ -113,7 +113,7 @@
         @include tamanio (70vh, 70%);
         margin-left: 15%;
         margin-bottom: 15px;
-        background-color: white;
+        background-color: $blanco;
         padding: 10px;
         text-align: center;
             img{
